@@ -27,8 +27,8 @@ Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que 
 
 ### 📌 **1. Clonar o repositório**
 ```sh
-  git clone https://github.com/SEU-USUARIO/ufc-sobral-atividades.git
-  cd ufc-sobral-atividades
+  git clone https://github.com/walissonportela/Mini_Projeto_5.git
+  cd Mini_Projeto_5
 ```
 
 ### 📌 **2. Instalar dependências**
