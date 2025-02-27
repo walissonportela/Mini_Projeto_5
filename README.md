@@ -1,4 +1,4 @@
-# 📌 UFC Sobral - Sistema de Atividades Acadêmicas
+# 📌 Mini Projeto 5 - Sistema de Atividades Acadêmicas
 
 Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que alunos do campus UFC Sobral possam cadastrar e acompanhar atividades acadêmicas.
 
