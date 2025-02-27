@@ -5,10 +5,10 @@ Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que 
 ---
 
 ## 👨‍💻 **Informações** 🚀
-Projeto: Mini Projeto 5
-Disciplina: Desenvolvimento Para Dispositivos Móveis
-Aluno: Joaquim Walisson Portela de Sousa
-Matrícula: 472152
+- Projeto: Mini Projeto 5
+- Disciplina: Desenvolvimento Para Dispositivos Móveis
+- Aluno: Joaquim Walisson Portela de Sousa
+- Matrícula: 472152
 
 ---
 
