@@ -1,39 +1,83 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { View, Text, StyleSheet } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
+// Importando as telas
+import HomeScreen from './index';
+import CadastroScreen from './cadastro';
+import ListaScreen from './lista';
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+// 🔥 Agora usando [id].tsx dentro das pastas editar e detalhes
+import EditarScreen from './editar';
+import DetalhesScreen from './detalhes';
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
+const Drawer = createDrawerNavigator();
 
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) {
-    return null;
-  }
-
+export default function Layout() {
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Drawer.Navigator
+      screenOptions={{
+        headerStyle: { backgroundColor: '#0086de' },
+        headerTintColor: '#fff',
+        headerTitleAlign: 'center',
+        headerTitle: () => (
+          <Text style={styles.headerTitle}>UFC Sobral - Sistema de Atividades</Text>
+        ),
+      }}
+    >
+      <Drawer.Screen 
+        name="index" 
+        component={HomeScreen} 
+        options={{ 
+          title: 'Página Inicial',
+          drawerIcon: ({ color, size }) => (
+            <MaterialIcons name="home" size={size} color={color} />
+          ),
+        }} 
+      />
+      <Drawer.Screen 
+        name="cadastro" 
+        component={CadastroScreen} 
+        options={{ 
+          title: 'Cadastrar Atividade',
+          drawerIcon: ({ color, size }) => (
+            <MaterialIcons name="playlist-add" size={size} color={color} />
+          ),
+        }} 
+      />
+      <Drawer.Screen 
+        name="lista" 
+        component={ListaScreen} 
+        options={{ 
+          title: 'Ver Atividades',
+          drawerIcon: ({ color, size }) => (
+            <MaterialIcons name="list" size={size} color={color} />
+          ),
+        }} 
+      />
+      <Drawer.Screen 
+        name="editar" 
+        component={EditarScreen} 
+        options={{ 
+          title: 'Editar Atividade',
+        }} 
+      />
+      <Drawer.Screen 
+        name="detalhes" 
+        component={DetalhesScreen} 
+        options={{ 
+          title: 'Detalhes da Atividade',
+        }} 
+      />
+    </Drawer.Navigator>
   );
 }
+
+const styles = StyleSheet.create({
+  headerTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#fff',
+    textAlign: 'center',
+  },
+});
