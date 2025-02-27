@@ -1,3 +1,4 @@
+// Layout Principal
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { View, Text, StyleSheet } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
@@ -6,10 +7,6 @@ import { MaterialIcons } from '@expo/vector-icons';
 import HomeScreen from './index';
 import CadastroScreen from './cadastro';
 import ListaScreen from './lista';
-
-// 🔥 Agora usando [id].tsx dentro das pastas editar e detalhes
-import EditarScreen from './editar';
-import DetalhesScreen from './detalhes';
 
 const Drawer = createDrawerNavigator();
 
@@ -53,20 +50,6 @@ export default function Layout() {
           drawerIcon: ({ color, size }) => (
             <MaterialIcons name="list" size={size} color={color} />
           ),
-        }} 
-      />
-      <Drawer.Screen 
-        name="editar" 
-        component={EditarScreen} 
-        options={{ 
-          title: 'Editar Atividade',
-        }} 
-      />
-      <Drawer.Screen 
-        name="detalhes" 
-        component={DetalhesScreen} 
-        options={{ 
-          title: 'Detalhes da Atividade',
         }} 
       />
     </Drawer.Navigator>

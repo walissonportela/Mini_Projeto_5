@@ -1,4 +1,4 @@
-// index.tsx
+// Tela Inicial
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { FontAwesome } from '@expo/vector-icons';
