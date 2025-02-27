@@ -57,18 +57,3 @@ Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que 
 - 🌎 React Navigation + Expo Router
 
 ---
-
-## 🛠 **Possíveis Erros e Soluções**
-### ❌ `Module not found: react-native-vector-icons`
-> **Solução:**
-```sh
-  npm install react-native-vector-icons
-```
-
-### ❌ `Error: Cannot find module '@expo/vector-icons'`
-> **Solução:**
-```sh
-  npm install @expo/vector-icons
-```
-
----
