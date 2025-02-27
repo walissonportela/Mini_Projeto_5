@@ -22,6 +22,8 @@ Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que 
 - 🎨 Interface responsiva e estilizada.
 
 ---
+![image](https://github.com/user-attachments/assets/560e6208-3444-49df-8739-4d0b20f5cb70)
+---
 
 ## 🚀 **Como Executar o Projeto**
 
