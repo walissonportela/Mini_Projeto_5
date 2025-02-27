@@ -23,6 +23,8 @@ Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que 
 
 ---
 ![image](https://github.com/user-attachments/assets/560e6208-3444-49df-8739-4d0b20f5cb70)
+![image](https://github.com/user-attachments/assets/fc3bec8f-fbaf-47d9-85cf-31fd9b3e3721)
+
 ---
 
 ## 🚀 **Como Executar o Projeto**
