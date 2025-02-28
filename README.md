@@ -23,6 +23,7 @@ Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que 
 
 ---
 
+## 🖼️ **Imagens do Aplicativo** 🚀
 ![Mini_Projeto_5](https://github.com/user-attachments/assets/aef4b329-a750-4671-b1ae-5bd6eed473db)
 
 ---
