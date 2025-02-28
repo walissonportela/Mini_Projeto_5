@@ -45,6 +45,9 @@ Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que 
 ```sh
   npx expo start  # Inicia o servidor Expo
 ```
+**Caso utilize um Computador:**
+- Pressione **"W"** para abrir no **Navegador**
+
 **Caso utilize Android:**
 - Se estiver no emulador: pressione **"a"** para abrir no **Android**
 - Se estiver no celular, escaneie o QR Code no terminal
