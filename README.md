@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# 📌 Mini Projeto 5 - Sistema de Atividades Acadêmicas
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo desenvolvido em **React Native com Expo**, permitindo que alunos do campus UFC Sobral possam cadastrar e acompanhar atividades acadêmicas.
 
-## Get started
+---
 
-1. Install dependencies
+## 👨‍💻 **Informações** 🚀
+- Projeto: Mini Projeto 5
+- Disciplina: Desenvolvimento Para Dispositivos Móveis
+- Aluno: Joaquim Walisson Portela de Sousa
+- Matrícula: 472152
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## ✨ **Funcionalidades**
+- 📋 Cadastro de atividades com **nome, responsável, data e descrição**.
+- 🔍 Listagem de atividades cadastradas.
+- 📑 Exibição dos **detalhes** de uma atividade específica.
+- ✏️ **Edição** de atividades cadastradas.
+- ❌ **Exclusão** de atividades.
+- ✅ Validação de campos obrigatórios.
+- 🎨 Interface responsiva e estilizada.
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+![Mini_Projeto_5](https://github.com/user-attachments/assets/aef4b329-a750-4671-b1ae-5bd6eed473db)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 **Como Executar o Projeto**
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+### 📌 **1. Clonar o repositório**
+```sh
+  git clone https://github.com/walissonportela/Mini_Projeto_5.git
+  cd Mini_Projeto_5
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 📌 **2. Instalar dependências**
+```sh
+  npm install  # ou yarn install
+```
 
-## Learn more
+### 📌 **3. Executar o projeto**
+```sh
+  npx expo start  # Inicia o servidor Expo
+```
+**Caso utilize Android:**
+- Se estiver no emulador: pressione **"a"** para abrir no **Android**
+- Se estiver no celular, escaneie o QR Code no terminal
 
-To learn more about developing your project with Expo, look at the following resources:
+**Caso utilize iOS:**
+- Pressione **"i"** para abrir no simulador **iOS**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 📦 **Tecnologias Utilizadas**
+- ⚛️ React Native
+- 🎨 Styled Components
+- 📱 Expo
+- 🗄️ AsyncStorage
+- 🌎 React Navigation + Expo Router
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
